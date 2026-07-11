@@ -23,7 +23,7 @@ HOW TO USE THIS TEMPLATE
 
 ---
 
-### 🗂️ Projects by Domain
+### 🗂️ Projects
 
 <details open>
 <summary><strong>⚡ Energy & IoT</strong></summary>
