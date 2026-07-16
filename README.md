@@ -14,11 +14,11 @@ HOW TO USE THIS TEMPLATE
 =====================================================================
 -->
 
-<h1 align="center">Hi, I'm [Your Name] 👋</h1>
+<h1 align="center">Hi, I'm Nariman 👋</h1>
 <h3 align="center">Data Engineer</h3>
 
 <p align="center">
-📍 [City/Remote] &nbsp;|&nbsp; 🔭 Currently: [open to Data Engineer / ML Platform Engineer roles] &nbsp;|&nbsp; 📫 [email or LinkedIn]
+🔭 Currently: open to Data Engineer roles] &nbsp;|&nbsp; 📫 
 </p>
 
 ---
