@@ -25,7 +25,7 @@ HOW TO USE THIS TEMPLATE
 
 🗂️ Projects by Domain
 
-<details open>
+<details>
 <summary><strong>🏙️ Public Sector — Chicago 311 Service Requests</strong></summary>
 <br>
 Batch lakehouse processing 4.4M+ Chicago 311 service request records (2018–present) for SLA compliance, backlog visibility, and geographic-equity reporting.
@@ -40,7 +40,7 @@ Stack: BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars  |  �
 
 
 </details>
-<details open>
+<details>
 <summary><strong>🧭 Population & Demographics — DemographIQ</strong></summary>
 <br>
 A pipeline and interactive mapping tool" modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
