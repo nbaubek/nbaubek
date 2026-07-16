@@ -15,7 +15,7 @@ HOW TO USE THIS TEMPLATE
 -->
 
 <h1 align="center">Hi, I'm Nariman 👋</h1>
-<h3 align="center">Data Engineer</h3>
+<h3 align="center">👨🏻‍💻⚙️Data Engineer</h3>
 
 <p align="center">
 🔭 Currently: open to Data Engineer roles
