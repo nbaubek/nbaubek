@@ -43,7 +43,7 @@ Stack: BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars  |  �
 <details open>
 <summary><strong>🧭 Population & Demographics — DemographIQ</strong></summary>
 <br>
-A data platform (not just a pipeline) modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
+A pipeline and interactive mapping tool" modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
 
 
 Bronze → Silver → Gold medallion on S3 + Athena + Iceberg, ingesting 3 heterogeneous APIs into one coherent storage layer at state/county/census-tract granularity (~84k tracts)
@@ -131,8 +131,6 @@ Stack: PyIceberg, dbt-athena, Qdrant, Prefect, FastAPI, Terraform, Docker  |  
 Smaller tools and scripts I've built outside the domain projects above — utilities, automations, one-offs.
 
 - **[Tool Name]** — [one-line description of what it does] &nbsp;|&nbsp; 🔗 [Repo]
-- **[Tool Name]** — [one-line description of what it does] &nbsp;|&nbsp; 🔗 [Repo]
-- **[Tool Name]** — [one-line description of what it does] &nbsp;|&nbsp; 🔗 [Repo]
 
 ---
 
@@ -144,9 +142,8 @@ Smaller tools and scripts I've built outside the domain projects above — utili
 
 **Orchestration & Processing:** ![Airflow](https://img.shields.io/badge/-Airflow-017CEE?logo=apacheairflow&logoColor=white) ![Spark](https://img.shields.io/badge/-Spark-E25A1C?logo=apachespark&logoColor=white) ![Kafka](https://img.shields.io/badge/-Kafka-231F20?logo=apachekafka&logoColor=white)
 
-**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Postgres](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql&logoColor=white)
+**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql&logoColor=white) ![Terraform](https://shields.io)
 
-*(Trim this list to what you'd actually be comfortable discussing in an interview — a shorter honest list beats a long aspirational one.)*
 
 ---
 
