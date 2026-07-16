@@ -142,7 +142,7 @@ Smaller tools and scripts I've built outside the domain projects above — utili
 
 **Orchestration & Processing:** ![Airflow](https://img.shields.io/badge/-Airflow-017CEE?logo=apacheairflow&logoColor=white) ![Spark](https://img.shields.io/badge/-Spark-E25A1C?logo=apachespark&logoColor=white) ![Kafka](https://img.shields.io/badge/-Kafka-231F20?logo=apachekafka&logoColor=white)
 
-**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql&logoColor=white) ![Terraform](https://shields.io)
+**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql&logoColor=white) [![Terraform](https://shields.io)](TargetURL)
 
 
 ---
