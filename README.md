@@ -18,7 +18,7 @@ HOW TO USE THIS TEMPLATE
 <h3 align="center">Data Engineer</h3>
 
 <p align="center">
-🔭 Currently: open to Data Engineer roles] &nbsp;|&nbsp; 📫 
+🔭 Currently: open to Data Engineer roles
 </p>
 
 ---
