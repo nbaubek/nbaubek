@@ -138,11 +138,11 @@ Smaller tools and scripts I've built outside the domain projects above — utili
 
 **Languages:** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=postgresql&logoColor=white)
 
-**Cloud & Storage:** ![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&logoColor=white) ![GCP](https://img.shields.io/badge/-GCP-4285F4?logo=google-cloud&logoColor=white) ![S3](https://img.shields.io/badge/-S3-569A31?logo=amazons3&logoColor=white)
+**Cloud & Storage:** ![AWS](https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&logoColor=white) ![GCP](https://img.shields.io/badge/-GCP-4285F4?logo=google-cloud&logoColor=white) ![S3](https://img.shields.io/badge/-S3-569A31?logo=amazons3&logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white)
 
-**Orchestration & Processing:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![DuckDB](https://img.shields.io/badge/-DuckDB-FFF000?logo=duckdb&logoColor=black) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white)
+**Orchestration & Transformation:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![DuckDB](https://img.shields.io/badge/-DuckDB-FFF000?logo=duckdb&logoColor=black) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white)
 
-**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white)
+**Infra:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Postgres](https://img.shields.io/badge/-Postgres-4169E1?logo=postgresql&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white)
 
 
 ---
