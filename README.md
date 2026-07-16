@@ -153,7 +153,7 @@ Links are in the sidebar — here's what you'll find at each:
 - **[Portfolio site]** — projects, background, and articles
 - **[Substack]** — technical writing on data engineering (cross-posted from my site)
 - **[LinkedIn]** — professional background and network
-- 📓 Older notes & DE learnings (not actively maintained): [link]
+- 📓 Older notes & DE learnings (not actively maintained): [https://de-learning-logs.gitbook.io/my-de-learning-logs]
 
 <!--
 =====================================================================
