@@ -130,7 +130,7 @@ Stack: PyIceberg, dbt-athena, Qdrant, Prefect, FastAPI, Terraform, Docker  |  
 ### 🧰 Side Projects
 Smaller tools and scripts I've built outside the domain projects above — utilities, automations, one-offs.
 
-- **[Tool Name]** — [one-line description of what it does] &nbsp;|&nbsp; 🔗 [Repo]
+- **Schemadiff** — A fast CLI utility to inspect schema definitions and generate column diffs for CSV and Parquet files. &nbsp;|&nbsp; 🔗 [Repo](https://github.com/nbaubek/schemadiff)
 
 ---
 
