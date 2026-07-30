@@ -149,8 +149,7 @@ Smaller tools and scripts I've built outside the domain projects above — utili
 ### 📫 Elsewhere
 Links are in the sidebar — here's what you'll find at each:
 
-- **[LinkedIn]** — professional background and network
-- **[Portfolio site]** — projects, background, and articles
+- **[LinkedIn](https://www.linkedin.com/in/nariman-baubekov-4bb232167/)** — professional background and network
 - **[Substack](https://substack.com/@narimanbaubekov)** — technical writing on data engineering 
 - 📓 Older [notes]((https://de-learning-logs.gitbook.io/my-de-learning-logs)) & DE learnings (not actively maintained)
 
