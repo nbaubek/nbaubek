@@ -39,19 +39,21 @@ Batch lakehouse processing 4.4M+ Chicago 311 service request records (2018–pre
 **Stack:** BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
 
 </details>
+
+<details>
 <summary><strong>🧭 Population & Demographics — DemographIQ</strong></summary>
-<br>
-A pipeline and interactive mapping tool" modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
 
+A pipeline and interactive mapping tool modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
 
-Bronze → Silver → Gold medallion on S3 + Athena + Iceberg, ingesting 3 heterogeneous APIs into one coherent storage layer at state/county/census-tract granularity (~84k tracts)
-Orchestrated with Dagster using dynamic partitions + a sensor instead of cron schedules — the pipeline reacts to actual data releases rather than guessing a release date
-Interactive choropleth map rendering 84k census tracts via GPU-accelerated WebGL (lonboard/deck.gl) without shipping raw geometry to the browser
-Data quality enforced with Dagster asset checks at every layer transition plus dbt tests on the mart models
-Stack: Dagster, dbt-athena, Polars, Apache Iceberg, Terraform, Flask, lonboard  |  🔗 population-demographics-de-project
+- Bronze → Silver → Gold medallion on S3 + Athena + Iceberg, ingesting 3 heterogeneous APIs into one coherent storage layer at state/county/census-tract granularity (~84k tracts)
+- Orchestrated with Dagster using dynamic partitions + a sensor instead of cron schedules — the pipeline reacts to actual data releases rather than guessing a release date
+- Interactive choropleth map rendering 84k census tracts via GPU-accelerated WebGL (lonboard/deck.gl) without shipping raw geometry to the browser
+- Data quality enforced with Dagster asset checks at every layer transition plus dbt tests on the mart models
 
+**Stack:** Dagster, dbt-athena, Polars, Apache Iceberg, Terraform, Flask, lonboard &nbsp;|&nbsp; 🔗 [population-demographics-de-project](https://github.com/nbaubek/population-demographics-de-project)
 
 </details>
+
 <details>
 <summary><strong>🛢️ Oil & Gas — WellStream</strong></summary>
 <br>
