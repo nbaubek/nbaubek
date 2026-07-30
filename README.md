@@ -36,7 +36,7 @@ Batch lakehouse processing 4.4M+ Chicago 311 service request records (2018–pre
 - Defined and documented explicit pipeline SLAs (freshness, ingestion completion time, failure recovery) separate from the city's own 311 response-time targets
 - Two Shiny dashboards serving distinct stakeholder personas: daily operational triage vs. weekly executive/SLA reporting
 
-**Stack:** BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
+**Stack:** ![BigQuery](https://img.shields.io/badge/-BigQuery-4285F4?logo=googlebigquery&logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Shiny](https://img.shields.io/badge/-Shiny-75AADB?logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
 
 </details>
 
