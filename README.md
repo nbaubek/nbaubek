@@ -56,72 +56,71 @@ A pipeline and interactive mapping tool modeling US socioeconomic patterns from 
 
 <details>
 <summary><strong>🛢️ Oil & Gas — WellStream</strong></summary>
-<br>
+
 Combines a batch market-data lakehouse with a real-time operational telemetry stream, built entirely within a 4GB memory constraint.
 
+- Batch: `dlt` ingests EIA market data into S3, cataloged with DuckLake, transformed with dbt-duckdb, served via Motherduck, orchestrated by Kestra
+- Streaming: simulated well telemetry flows through Redpanda Serverless → Bytewax (1-minute tumbling windows) → idempotent upserts into Neon serverless Postgres → Grafana
+- Implemented a dead-letter-queue pattern so malformed IoT payloads are isolated without interrupting the live pipeline
+- Deliberately offloaded the heaviest components (Kafka broker) to managed cloud tiers to protect local compute for the Python transformation layer
 
-Batch: dlt ingests EIA market data into S3, cataloged with DuckLake, transformed with dbt-duckdb, served via Motherduck, orchestrated by Kestra
-Streaming: simulated well telemetry flows through Redpanda Serverless → Bytewax (1-minute tumbling windows) → idempotent upserts into Neon serverless Postgres → Grafana
-Implemented a dead-letter-queue pattern so malformed IoT payloads are isolated without interrupting the live pipeline
-Deliberately offloaded the heaviest components (Kafka broker) to managed cloud tiers to protect local compute for the Python transformation layer
-Stack: dlt, DuckDB/DuckLake, dbt, Kestra, Redpanda, Bytewax, Neon Postgres, Terraform  |  🔗 oil-de-pipeline
-
+**Stack:** dlt, DuckDB/DuckLake, dbt, Kestra, Redpanda, Bytewax, Neon Postgres, Terraform &nbsp;|&nbsp; 🔗 [oil-de-pipeline](https://github.com/nbaubek/oil-de-pipeline)
 
 </details>
+
 <details>
 <summary><strong>📈 Marketing — MomentumCRM Customer Intelligence Platform</strong></summary>
-<br>
+
 A feature-store-centered platform serving three ML models (churn, campaign response, CLV) from one shared, point-in-time-correct pipeline for a simulated B2B SaaS company.
 
+- Built a Dagster asset-based pipeline (Polars transforms) feeding a Feast feature store — S3 offline store, Redis online store for sub-10ms serving lookups
+- Designed the pipeline specifically to prevent training/serving skew: the same `build_feature_table(as_of_date)` function powers both training and serving paths
+- Simulated 50k customers with persona-conditioned behavioral state machines (not random data) so churn and engagement signals are genuinely learnable
+- Served predictions via FastAPI, with models tracked and versioned through the MLflow Model Registry
 
-Built a Dagster asset-based pipeline (Polars transforms) feeding a Feast feature store — S3 offline store, Redis online store for sub-10ms serving lookups
-Designed the pipeline specifically to prevent training/serving skew: the same build_feature_table(as_of_date) function powers both training and serving paths
-Simulated 50k customers with persona-conditioned behavioral state machines (not random data) so churn and engagement signals are genuinely learnable
-Served predictions via FastAPI, with models tracked and versioned through the MLflow Model Registry
-Stack: Dagster, Polars, Feast, LightGBM, MLflow, FastAPI, Redis, Terraform, Docker  |  🔗 momentumcrm-marketing-de-project
-
+**Stack:** Dagster, Polars, Feast, LightGBM, MLflow, FastAPI, Redis, Terraform, Docker &nbsp;|&nbsp; 🔗 [momentumcrm-marketing-de-project](https://github.com/nbaubek/momentumcrm-marketing-de-project)
 
 </details>
+
 <details>
 <summary><strong>⚡ Energy & IoT — Wattstream</strong></summary>
-<br>
+
 Real-time monitoring platform for solar and wind assets across Austria, from raw sensor telemetry to operational and executive dashboards.
 
+- Bridged MQTT (HiveMQ Cloud) into Kafka-compatible Redpanda Serverless, with consumer groups, manual offset commits, and at-least-once delivery
+- Built a Bytewax dataflow for windowed KPI aggregation (60-minute tumbling + session windows) with on-disk SQLite state recovery
+- Modeled a 4-fact dbt star schema on Snowflake (hourly telemetry → daily → monthly rollups) with documented ADRs for every major tooling decision
+- Two visualization layers on different cadences: Grafana for sub-minute ops monitoring, Evidence.dev (code-as-dashboard) for business reporting
 
-Bridged MQTT (HiveMQ Cloud) into Kafka-compatible Redpanda Serverless, with consumer groups, manual offset commits, and at-least-once delivery
-Built a Bytewax dataflow for windowed KPI aggregation (60-minute tumbling + session windows) with on-disk SQLite state recovery
-Modeled a 4-fact dbt star schema on Snowflake (hourly telemetry → daily → monthly rollups) with documented ADRs for every major tooling decision
-Two visualization layers on different cadences: Grafana for sub-minute ops monitoring, Evidence.dev (code-as-dashboard) for business reporting
-Stack: Python, Redpanda/Kafka, Bytewax, Snowflake, dbt, Terraform, Grafana, Evidence.dev  |  🔗 green-energy-iot-de-project
-
+**Stack:** Python, Redpanda/Kafka, Bytewax, Snowflake, dbt, Terraform, Grafana, Evidence.dev &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
 
 </details>
+
 <details>
 <summary><strong>🏥 Healthcare — MedFlow Decision Engine</strong></summary>
-<br>
+
 A batch pipeline + decision engine that ingests CSV exports from EHR systems and returns a per-patient readmission-risk decision.
 
+- Built a Bronze → Silver → Gold medallion architecture on S3 + Apache Iceberg (PySpark, Glue, Athena), runs natively on an 8GB M1 MacBook with zero cluster cost
+- Combined three decision layers: deterministic clinical rules, an XGBoost readmission model, and an LLM-generated plain-English explanation — the rules engine is the authoritative escalation path, the ML score is a soft signal
+- Served via a BentoML API with per-item batch error handling, so one malformed patient record doesn't fail an entire cohort scoring run
+- Streamlit dashboard giving care coordinators a cohort view plus per-patient drill-down
 
-Built a Bronze → Silver → Gold medallion architecture on S3 + Apache Iceberg (PySpark, Glue, Athena), runs natively on an 8GB M1 MacBook with zero cluster cost
-Combined three decision layers: deterministic clinical rules, an XGBoost readmission model, and an LLM-generated plain-English explanation — the rules engine is the authoritative escalation path, the ML score is a soft signal
-Served via a BentoML API with per-item batch error handling, so one malformed patient record doesn't fail an entire cohort scoring run
-Streamlit dashboard giving care coordinators a cohort view plus per-patient drill-down
-Stack: PySpark, Apache Iceberg, Prefect, XGBoost, BentoML, Streamlit, Terraform  |  🔗 healthcare-csv-decision-engine
-
+**Stack:** PySpark, Apache Iceberg, Prefect, XGBoost, BentoML, Streamlit, Terraform &nbsp;|&nbsp; 🔗 [healthcare-csv-decision-engine](https://github.com/nbaubek/healthcare-csv-decision-engine)
 
 </details>
+
 <details>
 <summary><strong>💰 Finance — SupplyLens (EDGAR Filings Intelligence)</strong></summary>
-<br>
+
 Pulls real SEC EDGAR filings for 16 large-cap issuers and serves a research API with vector search over the filing text.
 
+- Ingested 5 filing types (10-K, 10-Q, 8-K, DEF 14A, Form 4) through a pure-Iceberg medallion architecture — S3 + Glue + Athena as a serverless warehouse, no managed platform
+- Embedded 24,556 real filing chunks into Qdrant for vector search, using a local zero-cost GGUF embedding model (no per-token API charges, no data egress)
+- Built 6 dbt marts on Athena, bucketed by company ID to match the API's query patterns
+- Three-layer data quality: Soda row-level checks, dbt column tests, and dbt source-freshness monitoring
 
-Ingested 5 filing types (10-K, 10-Q, 8-K, DEF 14A, Form 4) through a pure-Iceberg medallion architecture — S3 + Glue + Athena as a serverless warehouse, no managed platform
-Embedded 24,556 real filing chunks into Qdrant for vector search, using a local zero-cost GGUF embedding model (no per-token API charges, no data egress)
-Built 6 dbt marts on Athena, bucketed by company ID to match the API's query patterns
-Three-layer data quality: Soda row-level checks, dbt column tests, and dbt source-freshness monitoring
-Stack: PyIceberg, dbt-athena, Qdrant, Prefect, FastAPI, Terraform, Docker  |  🔗 edgar-supply-graph
-
+**Stack:** PyIceberg, dbt-athena, Qdrant, Prefect, FastAPI, Terraform, Docker &nbsp;|&nbsp; 🔗 [edgar-supply-graph](https://github.com/nbaubek/edgar-supply-graph)
 
 </details>
 
