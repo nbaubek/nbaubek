@@ -92,7 +92,7 @@ Real-time monitoring platform for solar and wind assets across Austria, from raw
 - Modeled a 4-fact dbt star schema on Snowflake (hourly telemetry → daily → monthly rollups) with documented ADRs for every major tooling decision
 - Two visualization layers on different cadences: Grafana for sub-minute ops monitoring, Evidence.dev (code-as-dashboard) for business reporting
 
-**Stack:** ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Qdrant](https://img.shields.io/badge/-Qdrant-DC244C?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
+**Stack:** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white) ![Bytewax](https://img.shields.io/badge/-Bytewax-00B4D8?logoColor=white) ![Snowflake](https://img.shields.io/badge/-Snowflake-29B5E8?logo=snowflake&logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Grafana](https://img.shields.io/badge/-Grafana-F46800?logo=grafana&logoColor=white) ![Evidence.dev](https://img.shields.io/badge/-Evidence.dev-8B5CF6?logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
 
 </details>
 
@@ -120,7 +120,7 @@ Pulls real SEC EDGAR filings for 16 large-cap issuers and serves a research API 
 - Built 6 dbt marts on Athena, bucketed by company ID to match the API's query patterns
 - Three-layer data quality: Soda row-level checks, dbt column tests, and dbt source-freshness monitoring
 
-**Stack:** PyIceberg, dbt-athena, Qdrant, Prefect, FastAPI, Terraform, Docker &nbsp;|&nbsp; 🔗 [edgar-supply-graph](https://github.com/nbaubek/edgar-supply-graph)
+**Stack:** ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Qdrant](https://img.shields.io/badge/-Qdrant-DC244C?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [edgar-supply-graph](https://github.com/nbaubek/edgar-supply-graph)
 
 </details>
 
