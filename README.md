@@ -64,7 +64,7 @@ Combines a batch market-data lakehouse with a real-time operational telemetry st
 - Implemented a dead-letter-queue pattern so malformed IoT payloads are isolated without interrupting the live pipeline
 - Deliberately offloaded the heaviest components (Kafka broker) to managed cloud tiers to protect local compute for the Python transformation layer
 
-**Stack:** dlt, DuckDB/DuckLake, dbt, Kestra, Redpanda, Bytewax, Neon Postgres, Terraform &nbsp;|&nbsp; 🔗 [oil-de-pipeline](https://github.com/nbaubek/oil-de-pipeline)
+**Stack:** ![dlt](https://img.shields.io/badge/-dlt-CB1B45?logoColor=white) ![DuckDB](https://img.shields.io/badge/-DuckDB-FFF000?logo=duckdb&logoColor=black) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Kestra](https://img.shields.io/badge/-Kestra-6E42CE?logoColor=white) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white) ![Bytewax](https://img.shields.io/badge/-Bytewax-00B4D8?logoColor=white) ![Neon](https://img.shields.io/badge/-Neon-00E5C0?logoColor=black) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) &nbsp;|&nbsp; 🔗 [oil-de-pipeline](https://github.com/nbaubek/oil-de-pipeline)
 
 </details>
 
@@ -78,7 +78,7 @@ A feature-store-centered platform serving three ML models (churn, campaign respo
 - Simulated 50k customers with persona-conditioned behavioral state machines (not random data) so churn and engagement signals are genuinely learnable
 - Served predictions via FastAPI, with models tracked and versioned through the MLflow Model Registry
 
-**Stack:** Dagster, Polars, Feast, LightGBM, MLflow, FastAPI, Redis, Terraform, Docker &nbsp;|&nbsp; 🔗 [momentumcrm-marketing-de-project](https://github.com/nbaubek/momentumcrm-marketing-de-project)
+**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![Feast](https://img.shields.io/badge/-Feast-FF5F5F?logoColor=white) ![MLflow](https://img.shields.io/badge/-MLflow-0194E2?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [momentumcrm-marketing-de-project](https://github.com/nbaubek/momentumcrm-marketing-de-project)
 
 </details>
 
@@ -92,7 +92,7 @@ Real-time monitoring platform for solar and wind assets across Austria, from raw
 - Modeled a 4-fact dbt star schema on Snowflake (hourly telemetry → daily → monthly rollups) with documented ADRs for every major tooling decision
 - Two visualization layers on different cadences: Grafana for sub-minute ops monitoring, Evidence.dev (code-as-dashboard) for business reporting
 
-**Stack:** Python, Redpanda/Kafka, Bytewax, Snowflake, dbt, Terraform, Grafana, Evidence.dev &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
+**Stack:** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white) ![Bytewax](https://img.shields.io/badge/-Bytewax-00B4D8?logoColor=white) ![Snowflake](https://img.shields.io/badge/-Snowflake-29B5E8?logo=snowflake&logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Grafana](https://img.shields.io/badge/-Grafana-F46800?logo=grafana&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
 
 </details>
 
