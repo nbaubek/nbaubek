@@ -36,7 +36,7 @@ Batch lakehouse processing 4.4M+ Chicago 311 service request records (2018–pre
 - Defined and documented explicit pipeline SLAs (freshness, ingestion completion time, failure recovery) separate from the city's own 311 response-time targets
 - Two Shiny dashboards serving distinct stakeholder personas: daily operational triage vs. weekly executive/SLA reporting
 
-**Stack:** ![BigQuery](https://img.shields.io/badge/-BigQuery-4285F4?logo=googlebigquery&logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Shiny](https://img.shields.io/badge/-Shiny-75AADB?logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
+**Stack:** ![BigQuery](https://img.shields.io/badge/-BigQuery-4285F4?logo=googlebigquery&logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Shiny](https://img.shields.io/badge/-Shiny-75AADB?logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
 
 </details>
 
@@ -50,7 +50,7 @@ A pipeline and interactive mapping tool modeling US socioeconomic patterns from 
 - Interactive choropleth map rendering 84k census tracts via GPU-accelerated WebGL (lonboard/deck.gl) without shipping raw geometry to the browser
 - Data quality enforced with Dagster asset checks at every layer transition plus dbt tests on the mart models
 
-**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) &nbsp;|&nbsp; 🔗 [population-demographics-de-project](https://github.com/nbaubek/population-demographics-de-project)
+**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) ![lonboard](https://img.shields.io/badge/-lonboard-3E5C76?logoColor=white) &nbsp;|&nbsp; 🔗 [population-demographics-de-project](https://github.com/nbaubek/population-demographics-de-project)
 
 </details>
 
@@ -78,7 +78,7 @@ A feature-store-centered platform serving three ML models (churn, campaign respo
 - Simulated 50k customers with persona-conditioned behavioral state machines (not random data) so churn and engagement signals are genuinely learnable
 - Served predictions via FastAPI, with models tracked and versioned through the MLflow Model Registry
 
-**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![Feast](https://img.shields.io/badge/-Feast-FF5F5F?logoColor=white) ![MLflow](https://img.shields.io/badge/-MLflow-0194E2?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [momentumcrm-marketing-de-project](https://github.com/nbaubek/momentumcrm-marketing-de-project)
+**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) ![Feast](https://img.shields.io/badge/-Feast-FF5F5F?logoColor=white) ![LightGBM](https://img.shields.io/badge/-LightGBM-4B8BBE?logoColor=white) ![MLflow](https://img.shields.io/badge/-MLflow-0194E2?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [momentumcrm-marketing-de-project](https://github.com/nbaubek/momentumcrm-marketing-de-project)
 
 </details>
 
@@ -92,7 +92,7 @@ Real-time monitoring platform for solar and wind assets across Austria, from raw
 - Modeled a 4-fact dbt star schema on Snowflake (hourly telemetry → daily → monthly rollups) with documented ADRs for every major tooling decision
 - Two visualization layers on different cadences: Grafana for sub-minute ops monitoring, Evidence.dev (code-as-dashboard) for business reporting
 
-**Stack:** ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Redpanda](https://img.shields.io/badge/-Redpanda-FF4C00?logoColor=white) ![Bytewax](https://img.shields.io/badge/-Bytewax-00B4D8?logoColor=white) ![Snowflake](https://img.shields.io/badge/-Snowflake-29B5E8?logo=snowflake&logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Grafana](https://img.shields.io/badge/-Grafana-F46800?logo=grafana&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
+**Stack:** ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Qdrant](https://img.shields.io/badge/-Qdrant-DC244C?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) &nbsp;|&nbsp; 🔗 [green-energy-iot-de-project](https://github.com/nbaubek/green-energy-iot-de-project)
 
 </details>
 
@@ -106,7 +106,7 @@ A batch pipeline + decision engine that ingests CSV exports from EHR systems and
 - Served via a BentoML API with per-item batch error handling, so one malformed patient record doesn't fail an entire cohort scoring run
 - Streamlit dashboard giving care coordinators a cohort view plus per-patient drill-down
 
-**Stack:** PySpark, Apache Iceberg, Prefect, XGBoost, BentoML, Streamlit, Terraform &nbsp;|&nbsp; 🔗 [healthcare-csv-decision-engine](https://github.com/nbaubek/healthcare-csv-decision-engine)
+**Stack:** ![PySpark](https://img.shields.io/badge/-PySpark-E25A1C?logo=apachespark&logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![Prefect](https://img.shields.io/badge/-Prefect-070E10?logoColor=white) ![XGBoost](https://img.shields.io/badge/-XGBoost-1560BD?logoColor=white) ![BentoML](https://img.shields.io/badge/-BentoML-6A5ACD?logoColor=white) ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-844FBA?logo=terraform&logoColor=white) &nbsp;|&nbsp; 🔗 [healthcare-csv-decision-engine](https://github.com/nbaubek/healthcare-csv-decision-engine)
 
 </details>
 
