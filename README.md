@@ -27,20 +27,18 @@ HOW TO USE THIS TEMPLATE
 
 <details>
 <summary><strong>🏙️ Public Sector — Chicago 311 Service Requests</strong></summary>
-<br>
+
 Batch lakehouse processing 4.4M+ Chicago 311 service request records (2018–present) for SLA compliance, backlog visibility, and geographic-equity reporting.
 
+- Kimball star schema with an explicitly documented SCD strategy per dimension — Type 0 for immutable geography and dates, Type 1 for department names that can change
+- Two fact tables with different grains: an accumulating-snapshot fact for ticket lifecycle, and a separate transaction fact (completed tickets only) for SLA/equity analysis
+- Implemented a Write-Audit-Publish pattern via BigQuery audit-table swap, since BigQuery doesn't support native Iceberg branching
+- Defined and documented explicit pipeline SLAs (freshness, ingestion completion time, failure recovery) separate from the city's own 311 response-time targets
+- Two Shiny dashboards serving distinct stakeholder personas: daily operational triage vs. weekly executive/SLA reporting
 
-Kimball star schema with an explicitly documented SCD strategy per dimension — Type 0 for immutable geography and dates, Type 1 for department names that can change
-Two fact tables with different grains: an accumulating-snapshot fact for ticket lifecycle, and a separate transaction fact (completed tickets only) for SLA/equity analysis
-Implemented a Write-Audit-Publish pattern via BigQuery audit-table swap, since BigQuery doesn't support native Iceberg branching
-Defined and documented explicit pipeline SLAs (freshness, ingestion completion time, failure recovery) separate from the city's own 311 response-time targets
-Two Shiny dashboards serving distinct stakeholder personas: daily operational triage vs. weekly executive/SLA reporting
-Stack: BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars  |  🔗 dezc-capstone-311-chicago-sr
-
+**Stack:** BigQuery/BigLake Iceberg, dbt, Prefect, Terraform, Shiny, Polars &nbsp;|&nbsp; 🔗 [dezc-capstone-311-chicago-sr](https://github.com/nbaubek/dezc-capstone-311-chicago-sr)
 
 </details>
-<details>
 <summary><strong>🧭 Population & Demographics — DemographIQ</strong></summary>
 <br>
 A pipeline and interactive mapping tool" modeling US socioeconomic patterns from Census ACS, TIGER/Line, and IRS migration data across 2012–2024.
