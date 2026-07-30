@@ -50,7 +50,7 @@ A pipeline and interactive mapping tool modeling US socioeconomic patterns from 
 - Interactive choropleth map rendering 84k census tracts via GPU-accelerated WebGL (lonboard/deck.gl) without shipping raw geometry to the browser
 - Data quality enforced with Dagster asset checks at every layer transition plus dbt tests on the mart models
 
-**Stack:** Dagster, dbt-athena, Polars, Apache Iceberg, Terraform, Flask, lonboard &nbsp;|&nbsp; 🔗 [population-demographics-de-project](https://github.com/nbaubek/population-demographics-de-project)
+**Stack:** ![Dagster](https://img.shields.io/badge/-Dagster-4F43DD?logoColor=white) ![dbt](https://img.shields.io/badge/-dbt-FF694B?logoColor=white) ![Apache Iceberg](https://img.shields.io/badge/-Apache%20Iceberg-0468DB?logoColor=white) ![AWS Athena](https://img.shields.io/badge/-AWS%20Athena-232F3E?logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) ![Polars](https://img.shields.io/badge/-Polars-CD792C?logoColor=white) &nbsp;|&nbsp; 🔗 [population-demographics-de-project](https://github.com/nbaubek/population-demographics-de-project)
 
 </details>
 
