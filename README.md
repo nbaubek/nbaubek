@@ -23,7 +23,7 @@ HOW TO USE THIS TEMPLATE
 
 ---
 
-🗂️ Projects by Domain
+### 🗂️ Projects by Domain
 
 <details>
 <summary><strong>🏙️ Public Sector — Chicago 311 Service Requests</strong></summary>
